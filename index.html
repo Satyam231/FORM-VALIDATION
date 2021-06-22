@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Car form validation</title>
+</head>
+
+<body>
+    <div id="Success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success: </strong>Your travel request has been saved
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error: </strong>Your travel request has not been saved
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container my-3">
+        <h1>Dragon Travel Desk</h1>
+        <form id="myForm">
+            <fieldset>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Username</label>
+                    <input type="text" id="name" class="form-control" placeholder="Type Your Username">
+                    <small class="invalid-feedback">Your user name must be 3-10 character long and should not start with
+                        number</small>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="text" id="email" class="form-control" placeholder="Type Your Email">
+                    <small class="invalid-feedback">Your email is not valid </small>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Mobile No.</label>
+                    <input type="text" id="phone" class="form-control" placeholder="Type Your Mobile No.">
+                    <small class="invalid-feedback">Your mobile no. is not valid</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="car" class="form-label">Select Your Car</label>
+                    <select id="car" class=" form-select">
+                        <option>Maruti 800</option>
+                        <option>Suzuki</option>
+                        <option>Nano</option>
+                        <option>Boloro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" rows="2" placeholder="Type Your Address"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Any Other Message</label>
+                    <textarea class="form-control" id="message" rows="2"
+                        placeholder="Type Your Other Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnNew">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
